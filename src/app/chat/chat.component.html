@@ -1,0 +1,13 @@
+<div class="header-buttons-container">
+  <button routerLink="/">Retour</button>
+
+  <button (click)="changeUser()" class="change-user-button">
+    Changer d'utilisateur
+    <img src="assets/icons/arrow-reload.svg" alt="Changer d'utilisateur" class="change-user-icon" fill>
+  </button>
+  <p class="current-user-name">
+    Utilisateur actuel : {{ currentUser.name }}
+  </p>
+</div>
+
+<div id="talkjs-container" style="height: 600px">Loading chats...</div>

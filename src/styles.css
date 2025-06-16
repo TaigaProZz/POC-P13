@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  color: black;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #6002ee;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #7e3ff2;
+}
+
+/* current user name classes */
+.current-user-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* change user button classes */
+.change-user-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.change-user-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.change-user-button:hover .change-user-icon {
+  animation: rotateIcon 0.2s linear;
+}
+
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}

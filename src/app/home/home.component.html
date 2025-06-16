@@ -1,10 +1,14 @@
 <div class="container">
-  go to chat page btn
-
-  <button routerLink="/chat" class="btn btn-primary">
+  <button routerLink="/chat">
     Aller à la page de chat
   </button>
-  <button>
-    Commencer la conversation
+
+  <button (click)="changeUser()" class="change-user-button">
+    Changer d'utilisateur
+    <img src="assets/icons/arrow-reload.svg" alt="Changer d'utilisateur" class="change-user-icon" fill>
   </button>
+
+  <p class="current-user-name">
+    Utilisateur actuel : {{ currentUser.name || 'Aucun utilisateur sélectionné' }}
+  </p>
 </div>
